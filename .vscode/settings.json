@@ -1,0 +1,23 @@
+{
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google }",
+  "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    // This project has students pull in json.hpp. This is a
+    // massive file and completely destroys the format-on-save action.
+    // So, don't!
+    "editor.formatOnSave": false,
+  },
+  "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+  "files.associations": {
+    "array": "cpp",
+    "span": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "vector": "cpp",
+    "__locale": "cpp"
+  }
+}
